@@ -36,6 +36,24 @@ public class IOManager {
             File root = new File(path);
 
             subFolders.add(root);
+
+
+            while (subFolders.size() != 0){
+                File currentFolder = subFolders.removeFirst();
+
+                if(currentFolder.listFiles() != null){
+                    for (File file : currentFolder.listFiles()) {
+                        if(file.isDirectory()){
+
+                        }
+                    }
+                }
+
+
+                System.out.println(currentFolder.toString());
+
+            }
+
         }
 
 
