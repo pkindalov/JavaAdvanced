@@ -8,6 +8,10 @@ public class IOManager {
 
     public static class OutputWriter{
 
+        public static void main(String[] args){
+            traverseDirectory("/home");
+        }
+
         public static void writeMessage(String message)
         {
             System.out.print(message);
@@ -58,6 +62,10 @@ public class IOManager {
 
 
     }
+
+
+
+
 
 
 }
